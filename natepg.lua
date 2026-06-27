@@ -21,7 +21,7 @@ local PLAYING_MIN_Y = 5
 local PLAYING_MAX_Y = 200
 local SPAWN_POS = Vector3.new(7.0, 21.3, 110.1)
 
--- ── IRIS LOAD ────────────────────────────────────────────
+-- ── IRIS LOAD ───────────────────────────────────────────
 local Iris = nil
 local irisOk, irisErr = pcall(function()
 	local src = game:HttpGet("https://raw.githubusercontent.com/x0581/Iris-Exploit-Bundle/main/bundle.lua", true)
@@ -29,7 +29,7 @@ local irisOk, irisErr = pcall(function()
 end)
 if not irisOk then warn("[Autofarm] Iris failed: " .. tostring(irisErr)) end
 
--- ── TOGGLE STATES ────────────────────────────────────────
+-- ── TOGGLE STATES ───────────────────────────────────────
 local toggles = {
 	farm    = true,
 	anti    = true,
